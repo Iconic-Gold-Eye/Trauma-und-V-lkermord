@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FPS Story Prototype</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="overlay">
+      <h1>FPS Story Prototype</h1>
+      <p>Click to start. Move: WASD • Jump: Space • Shoot: Left Click • Talk: E</p>
+      <button id="startBtn">Start Mission</button>
+    </div>
+
+    <div id="hud">
+      <div id="crosshair">+</div>
+      <div id="stats">
+        <span id="health">Health: 100</span>
+        <span id="ammo">Ammo: 12</span>
+        <span id="kills">Kills: 0</span>
+      </div>
+      <div id="hint"></div>
+      <div id="dialogueBox" class="hidden">
+        <div id="speaker">Guide</div>
+        <div id="line"></div>
+        <small>Press E to continue</small>
+      </div>
+    </div>
+
+    <script type="module" src="game.js"></script>
+  </body>
+</html>
